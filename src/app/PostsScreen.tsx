@@ -1,8 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
 import { ActivityIndicator, Text, FlatList } from 'react-native';
 import PostListItem from '../../src/components/PostListItem';
 import { usePosts } from '../../src/hooks/posts';
-import { SWRConfig } from 'swr';
 
 export default function PostsScreen() {
   const { posts, isLoading, error } = usePosts();
